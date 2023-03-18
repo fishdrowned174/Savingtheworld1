@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">  
+      <link rel="icon" type="image/x-icon" href="https://freepngimg.com/download/sports_equipment/22587-6-sport-picture.png">
+    </head>
+    <body>
+      <h1>Your Suggestion</h1>
+
+        <form action="/success" method="post">
+          
+          <input autocomplete="off" autofocus  id="name" name="name" placeholder="Full Name" type="text" required>
+           <select name="cca" requried>
+              <option disabled selected>CCA</option>
+        {% for i in sport %}
+              <option value="{{ i }}">{{ i }}</option>
+        {% endfor %}
+            </select>
+            <select name="class" required>
+                <option disabled selected>Class</option>
+        {% for i in clas %}
+                <option value="{{ i }}">{{ i }}</option>
+        {% endfor %}
+            </select>
+          
+          <input autocomplete="off" autofocus id="suggestion" placeholder="Suggestion" type="text" suggestion="suggestion" name="improv" required>
+          <button type="submit">Enter</button>
+        
+        </form>
+        <a href=https://playvalorant.com/en-sg/>Win a game of Valorant before submitting</a> 
+  
+
+    </body>
+</html>

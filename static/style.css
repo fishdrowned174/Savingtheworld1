@@ -1,0 +1,25 @@
+body {
+  font-family: "tahoma";
+  background: #5A5A5A;
+  color: teal;
+  background-image: url('https://t4.ftcdn.net/jpg/01/14/80/01/240_F_114800196_3hwrdbhijNFHd4SfeYKqhlKSS1FnWgeQ.jpg');
+  font-weight: bold
+  
+  
+}
+h1{font-size: 60px}
+table {
+			width: 100%;
+			border-collapse: collapse;
+		}
+		th, td {
+			padding: 8px;
+			border: 1px solid teal;
+			text-align: left;
+      background-color: orange;
+		}
+		th {
+			background-color: orange;
+		}
+
+a{color:white}

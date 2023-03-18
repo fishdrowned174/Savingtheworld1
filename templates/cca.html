@@ -1,0 +1,68 @@
+<!DOCTYPE.html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <title>Registration</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+        <link rel="icon" type="image/x-icon" href="https://freepngimg.com/download/sports_equipment/22587-6-sport-picture.png">
+    </head>
+    <body>
+    
+      <h1>Register</h1>
+    
+      
+      <form method="post" action="/register">
+      <input autofocus autocomplete="off" type="text" placeholder="Name" id="name" name="name" required>
+      <label for="class">Class:</label>
+      <select name="class" required>
+        <option disabled selected>Class</option>
+        {% for i in clas %}
+              <option value="{{ i }}">{{ i }}</option>
+        {% endfor %}
+      </select>  
+        <br>
+      <label for="gender">Gender:</label><br>
+      <input type="radio" id="male" name="gender" value="m" required>
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="f" required>
+      <label for="female">Female</label>
+      <br>
+      <label for="c1">Choice 1:</label>
+        <select id="c1" name="c1" required>
+          <option disabled selected>Choice 1</option>
+        {% for i in sport %}
+          <option value="{{ i }}">{{ i }}</option>
+        {% endfor %}
+        </select>
+      <br>
+      <label for="c2">Choice 2:</label>
+      <select name="c2" id='c2' required>
+        <option disabled selected>Choice 2</option>
+        {% for i in sport %}
+              <option value="{{ i }}">{{ i }}</option>
+        {% endfor %}
+      </select>
+      <br>
+      <label for="c3">Choice 3:</label>
+      <select name="c3" id='c3' required>
+        <option disabled selected>Choice 3</option>
+        {% for i in sport %}
+              <option value="{{ i }}">{{ i }}</option>
+        {% endfor %}
+      </select>
+  
+      
+
+      <hr><input type="submit" value="Submit">
+    </form> 
+    <form action="/" method="get">
+      <button type="submit">Home</button>
+    </form>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <a href= "https://www.youtube.com/watch?v=dQw4w9WgXcQ">hi</a>
+    </body>
+</html>
